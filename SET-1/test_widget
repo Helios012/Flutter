@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(TextWidgetApp());
+}
+
+class TextWidgetApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Text Widget Example',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Text Widget Example'),
+        ),
+        body: Center(
+          child: Text(
+            'Hello, Flutter! Welcome to the Text Widget Example.',
+            style: TextStyle(
+              fontSize: 24,                 // Text size
+              color: Colors.blueAccent,     // Text color
+              fontWeight: FontWeight.bold,  // Text weight
+              letterSpacing: 2.0,           // Space between letters
+              wordSpacing: 5.0,             // Space between words
+              fontStyle: FontStyle.italic,  // Italic text
+            ),
+            textAlign: TextAlign.center,    // Center align text
+          ),
+        ),
+      ),
+    );
+  }
+}
